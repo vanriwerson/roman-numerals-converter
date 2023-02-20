@@ -3,9 +3,9 @@ from converter import int_to_roman_numeral, roman_numeral_to_int
 
 @click.command()
 def main():
-    conversion_type = click.prompt('What type of conversion would you like to perform? (arabic = A/roman = R)', type=click.Choice(['arabic', 'roman']))
+    conversion_type = click.prompt('What type of conversion would you like to perform? (Arabic/Roman)', type=click.Choice(['A', 'R']))
 
-    if conversion_type == 'arabic':
+    if conversion_type == 'A':
         arabic_numeral = click.prompt('Enter the Arabic numeral', type=int)
         roman_numeral = int_to_roman_numeral(arabic_numeral)
         click.echo(f'{arabic_numeral} = {roman_numeral}')
