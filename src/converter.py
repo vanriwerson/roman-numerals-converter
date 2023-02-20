@@ -37,7 +37,7 @@ def roman_numeral_to_int(str_to_convert):
 
     for char in str_to_convert:
         if not char in roman_algarisms_values:
-            return "O valor informado não é um algarismo romano"
+            return "O valor informado não é um número romano."
 
         actual_value = roman_algarisms_values[char]
 
