@@ -1,7 +1,7 @@
 def int_to_roman_numeral(int_to_convert):
     if not isinstance(int_to_convert, int):
         return "O número que será convertido precisa ser um inteiro."
-    
+
     if int_to_convert > 3999:
         return "O número que será convertido não pode ser maior do que 3999."
 
@@ -17,5 +17,35 @@ def int_to_roman_numeral(int_to_convert):
             int_to_convert -= correspondent_integers[index]
         else:
             index += 1
+
+    return converted
+
+
+def roman_numeral_to_int(str_to_convert):
+    roman_algarisms_values = {
+        "M": 1000,
+        "D": 500,
+        "C": 100,
+        "L":50,
+        "X":10,
+        "V":5,
+        "I":1
+    }
+
+    converted = 0
+    prev_value = 0
+
+    for char in str_to_convert:
+        if not char in roman_algarisms_values:
+            return "O valor informado não é um algarismo romano"
+
+        actual_value = roman_algarisms_values[char]
+
+        if actual_value > prev_value:
+            converted += actual_value - 2 * prev_value
+        else:
+            converted += actual_value
+
+        prev_value = actual_value
 
     return converted
