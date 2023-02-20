@@ -2,7 +2,7 @@
 
 >This is a simple Python script that can convert Roman numerals to Arabic numerals and vice versa.
 
-## Runnig the application
+## Getting started
   1. Clone this repository: `git clone git@github.com:vanriwerson/roman-numerals-converter.git`
   2. Install dependencies: `python3 -m pip install -r dev-requirements.txt`
 
