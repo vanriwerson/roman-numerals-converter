@@ -10,5 +10,4 @@
 
 To use the script, execute the command `python3 src/cli.py` and follow the on-screen prompts. You will be asked to choose whether you want to convert from Roman to Arabic numerals or from Arabic to Roman numerals, and then to enter the appropriate numeral. The script will then convert the numeral and display the result.
 
-## Example
-
+## Developped by [Bruno Riwerson Silva](https://www.linkedin.com/in/bruno-riwerson/)
